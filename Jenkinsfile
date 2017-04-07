@@ -25,7 +25,7 @@ pipeline {
             
           },
           "code analysis: php": {
-            sh 'echo ${reports_path}'
+            sh '"echo ${reports_path}"'
             
           }
         )
