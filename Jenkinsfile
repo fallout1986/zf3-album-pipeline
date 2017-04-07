@@ -33,7 +33,7 @@ pipeline {
     }
     stage('push: docker image') {
       steps {
-        sh 'echo \'push docker image\''
+        sh '"echo push docker image"'
       }
     }
   }
