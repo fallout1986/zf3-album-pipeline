@@ -21,11 +21,11 @@ pipeline {
       steps {
         parallel(
           "test: app backend": {
-            sh '"echo ${date}"'
+            sh "echo ${date}"
             
           },
           "code analysis: php": {
-            sh '"echo ${reports_path}"'
+            sh "echo ${reports_path}"
             
           }
         )
@@ -33,7 +33,7 @@ pipeline {
     }
     stage('push: docker image') {
       steps {
-        sh '"echo push docker image"'
+        sh "echo push docker image"
       }
     }
   }
